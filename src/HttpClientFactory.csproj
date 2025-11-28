@@ -1,20 +1,32 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Company>yuzd</Company>
-    <Description>safe HttpClient for netcore and netframework</Description>
-    <Copyright>zdyu</Copyright>
-    <PackageProjectUrl>https://github.com/yuzd/HttpClientFactory</PackageProjectUrl>
-    <Version>1.0.6</Version>
-    <PackageReleaseNotes>Allow setting default HttpClient timeout per factory</PackageReleaseNotes>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>Hymma.HttpClientFactory</PackageId>
+    <Version>1.0.7</Version>
+    <Authors>Hamed Ashrafi</Authors>
+    <Company>HYMMA</Company>
+    <Description>Safe HttpClient factory for .NET Core and .NET Framework. Provides per-host HttpClient instances with configurable timeouts. Strong-name signed.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/H-Ashrafi/HttpClientFactory</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/H-Ashrafi/HttpClientFactory</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Strong-name signed version with configurable timeouts</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-    <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\Users\Ashra\source\repos\HttpClientFactory\HttpClientFactory.snk</AssemblyOriginatorKeyFile>
-    <IncludeSymbols>True</IncludeSymbols>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>HttpClient;HttpClientFactory;REST;API;Strong-Named</PackageTags>
+
+    <!-- Assembly signing -->
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\HttpClientFactory.snk</AssemblyOriginatorKeyFile>
+
+    <!-- Symbols -->
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
