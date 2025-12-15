@@ -2,11 +2,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    <AssemblyName>Hymma.HttpClientFactory</AssemblyName>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 
     <!-- NuGet Package Metadata -->
     <PackageId>Hymma.HttpClientFactory</PackageId>
-    <Version>1.0.7</Version>
+    <Version>1.0.8</Version>
     <Authors>Hamed Ashrafi</Authors>
     <Company>HYMMA</Company>
     <Description>Safe HttpClient factory for .NET Core and .NET Framework. Provides per-host HttpClient instances with configurable timeouts. Strong-name signed.</Description>
@@ -14,7 +15,7 @@
     <PackageProjectUrl>https://github.com/H-Ashrafi/HttpClientFactory</PackageProjectUrl>
     <RepositoryUrl>https://github.com/H-Ashrafi/HttpClientFactory</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Strong-name signed version with configurable timeouts</PackageReleaseNotes>
+    <PackageReleaseNotes>Assembly renamed to Hymma.HttpClientFactory.dll for consistency with package name. Strong-name signed.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
